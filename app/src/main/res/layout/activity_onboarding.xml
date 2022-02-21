@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Razeware LLC
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in
+  ~ all copies or substantial portions of the Software.
+  ~
+  ~ Notwithstanding the foregoing, you may not use, copy, modify, merge, publish,
+  ~ distribute, sublicense, create a derivative work, and/or sell copies of the
+  ~ Software in any work that is designed, intended, or marketed for pedagogical or
+  ~ instructional purposes related to programming, coding, application development,
+  ~ or information technology.  Permission for such use, copying, modification,
+  ~ merger, publication, distribution, sublicensing, creation of derivative works,
+  ~ or sale is expressly withheld.
+  ~
+  ~ This project and source code may use libraries or frameworks that are
+  ~ released under various Open-Source licenses. Use of those libraries and
+  ~ frameworks are governed by their own individual licenses.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  ~ THE SOFTWARE.
+  -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ui.OnBoardingActivity">
+
+  <Button
+      android:id="@+id/loginButton"
+      android:layout_width="240dp"
+      android:layout_height="60dp"
+      android:layout_marginBottom="12dp"
+      android:background="@color/handbookBlue"
+      android:text="@string/login_label"
+      android:textColor="@android:color/white"
+      app:layout_constraintBottom_toTopOf="@+id/registerButton"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+      android:id="@+id/registerButton"
+      android:layout_width="240dp"
+      android:layout_height="60dp"
+      android:layout_marginBottom="60dp"
+      android:background="@color/handbookBlue"
+      android:text="@string/register_label"
+      android:textColor="@android:color/white"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="@+id/loginButton"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/loginButton" />
+
+  <ImageView
+      android:id="@+id/handbookLogo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="42dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.496"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/handbook_text_logo" />
+
+  <ImageView
+      android:id="@+id/imageIcon"
+      android:layout_width="208dp"
+      android:layout_height="168dp"
+      android:layout_marginTop="40dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/handbookMotto" />
+
+  <TextView
+      android:id="@+id/handbookMotto"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:text="@string/handbook_motto"
+      android:textColor="@color/handbookBlue"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/handbookLogo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
